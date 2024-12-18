@@ -211,17 +211,18 @@
         <p>Discover more about Āne Village at <a href="https://www.latvia.travel/en" target="_blank">Latvia Tourism Portal</a>.</p>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
-    <script>
-        var map = L.map('map').setView([56.5636, 24.7169], 13); // Coordinates for Āne village
-
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-
-        var marker = L.marker([56.5636, 24.7169]).addTo(map);
-        marker.bindPopup("<b>Āne Village</b>").openPopup();
-    </script>
+    <div class="container">
+        <section class="section">
+            <h2>Interactive Map</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8628.037012203815!2d24.7129!3d56.5629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ee8a22ba6b82b3%3A0xb58a5b6c108dc73c!2zQsWbbGUgQsSbdcWbuCDwnYy4!5e0!3m2!1sen!2slv!4v1690985587292!5m2!1sen!2slv" 
+                    allowfullscreen
+                    loading="lazy">
+                </iframe>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
 
